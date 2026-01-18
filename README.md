@@ -1,4 +1,4 @@
-# 🚀 Ultimate Local AI Coding Setup (RTX 5090 + 9950X3D) - Windows 11 64-bit
+# My Local AI Coding Setup (RTX 5090 + 9950X3D) - Windows 11 64-bit January 2026
 
 This guide is tuned for elite performance (120+ tokens/s) while maintaining a massive 128k context window for large projects. This setup is specifically optimized for Windows 11 64-bit systems.
 
