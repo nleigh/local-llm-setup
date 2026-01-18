@@ -95,6 +95,8 @@ d-----        18/01/2026     12:29                llama-b7770-bin-win-cuda-12.4-
 ## 2. The "Brain" (llama-server)
 Use the **Qwen3-Coder-30B-A3B-Instruct-UD-Q6_K_XL** GGUF model.
 
+You can download this model from Hugging Face: [unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF](https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF)
+
 ### Optimized Launch Command
 ```powershell
 .\llama-server.exe -m "C:\AI\models\Qwen3-Coder-30B-A3B-Instruct-UD-Q6_K_XL.gguf" `
