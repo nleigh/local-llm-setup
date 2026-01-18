@@ -8,6 +8,90 @@ This guide is tuned for elite performance (120+ tokens/s) while maintaining a ma
   `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`.
 * **OpenCode CLI**: Run `npm install -g opencode-ai@latest`.
 
+## 2. Directory Setup Example
+
+Here's an example directory structure for the setup:
+
+```powershell
+PS C:\AI> ls
+
+
+    Directory: C:\AI
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18/01/2026     12:29                llama-server
+d-----        18/01/2026     16:01                models
+-a----        18/01/2026     18:10           3302 llama-server-command.md
+
+
+PS C:\AI> ls .\models\
+
+
+    Directory: C:\AI\models
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        18/01/2026     13:02    32483935392 Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
+-a----        18/01/2026     13:34    26340328608 Qwen3-Coder-30B-A3B-Instruct-UD-Q6_K_XL.gguf
+
+
+PS C:\AI> ls .\llama-server\
+
+
+    Directory: C:\AI\llama-server
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        18/01/2026     12:29                cudart-llama-bin-win-cuda-12.4-x64
+d-----        18/01/2026     12:29                llama-b7770-bin-win-cuda-12.4-x64
+-a----        26/03/2024     03:39      100033536 cublas64_12.dll
+-a----        26/03/2024     03:39      473551360 cublasLt64_12.dll
+-a----        15/03/2024     15:46         553984 cudart64_12.dll
+-a----        18/01/2026     07:16         674304 ggml-base.dll
+-a----        18/01/2026     07:16         999936 ggml-cpu-alderlake.dll
+-a----        18/01/2026     07:16        1234944 ggml-cpu-cannonlake.dll
+-a----        18/01/2026     07:16        1222656 ggml-cpu-cascadelake.dll
+-a----        18/01/2026     07:16        1223168 ggml-cpu-cooperlake.dll
+-a----        18/01/2026     07:16        1003520 ggml-cpu-haswell.dll
+-a----        18/01/2026     07:16        1229312 ggml-cpu-icelake.dll
+-a----        18/01/2026     07:16         908800 ggml-cpu-ivybridge.dll
+-a----        18/01/2026     07:16         911872 ggml-cpu-piledriver.dll
+-a----        18/01/2026     07:16         889856 ggml-cpu-sandybridge.dll
+-a----        18/01/2026     07:16        1492992 ggml-cpu-sapphirerapids.dll
+-a----        18/01/2026     07:16        1227776 ggml-cpu-skylakex.dll
+-a----        18/01/2026     07:16         728064 ggml-cpu-sse42.dll
+-a----        18/01/2026     07:16         719360 ggml-cpu-x64.dll
+-a----        18/01/2026     07:16        1230336 ggml-cpu-zen4.dll
+-a----        18/01/2026     07:16      445071360 ggml-cuda.dll
+-a----        18/01/2026     07:16         142336 ggml-rpc.dll
+-a----        18/01/2026     07:16          95744 ggml.dll
+-a----        18/01/2026     11:16         634936 libomp140.x86_64.dll
+-a----        18/01/2026     07:16        6532608 llama-batched-bench.exe
+-a----        18/01/2026     07:16         510976 llama-bench.exe
+-a----        18/01/2026     07:16        8103424 llama-cli.exe
+-a----        18/01/2026     07:16        6557184 llama-completion.exe
+-a----        18/01/2026     07:16        6519808 llama-fit-params.exe
+-a----        18/01/2026     07:16          27648 llama-gemma3-cli.exe
+-a----        18/01/2026     07:16          60416 llama-gguf-split.exe
+-a----        18/01/2026     07:16        6616576 llama-imatrix.exe
+-a----        18/01/2026     07:16          27648 llama-llava-cli.exe
+-a----        18/01/2026     07:16          27648 llama-minicpmv-cli.exe
+-a----        18/01/2026     07:16        6552576 llama-mtmd-cli.exe
+-a----        18/01/2026     07:16        6656512 llama-perplexity.exe
+-a----        18/01/2026     07:16         356864 llama-quantize.exe
+-a----        18/01/2026     07:16          27648 llama-qwen2vl-cli.exe
+-a----        18/01/2026     07:16        9760256 llama-server.exe
+-a----        18/01/2026     07:16         296960 llama-tokenize.exe
+-a----        18/01/2026     07:16        6637568 llama-tts.exe
+-a----        18/01/2026     07:16        2665472 llama.dll
+-a----        18/01/2026     07:16         849408 mtmd.dll
+-a----        18/01/2026     07:16         111616 rpc-server.exe
+```
+
 ## 2. The "Brain" (llama-server)
 Use the **Qwen3-Coder-30B-A3B-Instruct-UD-Q6_K_XL** GGUF model.
 
