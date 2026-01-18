@@ -97,6 +97,18 @@ Use the **Qwen3-Coder-30B-A3B-Instruct-UD-Q6_K_XL** GGUF model.
 
 You can download this model from Hugging Face: [unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF](https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF)
 
+### Alternative Model: Nemotron-3-Nano-30B-A3B
+
+Another excellent option is the **Nemotron-3-Nano-30B-A3B-GGUF** model, which offers different advantages:
+
+#### Why Q5_K_M is the "Goldilocks" Choice
+
+**VRAM Safety**: 26.1 GB (Weights) + ~3.4 GB (128k Context at Q4) + ~1.5 GB (Windows) = 31 GB. This utilizes nearly 98% of your 31.5 GB usable VRAM, giving you the maximum possible intelligence without crashing.
+
+**Architecture Benefits**: Nemotron-3-Nano uses a Mixture-of-Experts (MoE) design with only ~3.6B active parameters, meaning it will feel as fast as a small model while retaining 30B-level reasoning.
+
+**Quality**: Moving from Q4 to Q5 significantly reduces "perplexity" (errors) in complex reasoning and coding tasks.
+
 ### Optimized Launch Command
 ```powershell
 .\llama-server.exe -m "C:\AI\models\Qwen3-Coder-30B-A3B-Instruct-UD-Q6_K_XL.gguf" `
