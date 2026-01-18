@@ -1,6 +1,6 @@
-# 🚀 Ultimate Local AI Coding Setup (RTX 5090 + 9950X3D)
+# 🚀 Ultimate Local AI Coding Setup (RTX 5090 + 9950X3D) - Windows 11 64-bit
 
-This guide is tuned for elite performance (120+ tokens/s) while maintaining a massive 128k context window for large projects.
+This guide is tuned for elite performance (120+ tokens/s) while maintaining a massive 128k context window for large projects. This setup is specifically optimized for Windows 11 64-bit systems.
 
 ## 1. System Requirements & Prep
 * **Node.js**: Install the LTS version from [nodejs.org](https://nodejs.org/).
